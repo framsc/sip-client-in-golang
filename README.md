@@ -20,3 +20,5 @@ SIP 相关的软件很多 https://en.wikipedia.org/wiki/List_of_SIP_software，�
 另外我还写了个 C 语言版的 client：
 https://github.com/frams163com/sip_client
 
+go 貌似没有很强大的 SIP 软件，考虑到 go 可以直接调用 C library，做了个exosip封装，还在完善中。。。
+
