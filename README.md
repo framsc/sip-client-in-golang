@@ -14,7 +14,7 @@ SIP 相关的软件很多 https://en.wikipedia.org/wiki/List_of_SIP_software，�
 
 ## 为什么选择 golang？
 
-1. 网络编程十分方便，只要 Dial, Listen, Read 就行，比C语言 socket, bind, listen, send, recv ... 方便. 但是 Dial 可以 Dial("tcp") 和 Dial("udp"), Liten却不是Listen("tcp") 和 Listen("udp"), 而是 ListenUDP，看来还是很别扭。
+1. 网络编程十分方便，只要 Dial, Listen, Read Write 就行，比C语言 socket, bind, listen, send, recv ... 方便. 但是 Dial 可以 Dial("tcp") 和 Dial("udp"), Liten却不是Listen("tcp") 和 Listen("udp"), 而是 Listen(叫 ListenTCP 对称一些，也能忍，可以它就是Listen) 和 ListenUDP，看来还是很别扭。
 2. golang 有 Google 作靠山。
 
 另外我还写了个 C 语言版的 client：
