@@ -1,6 +1,6 @@
 # SIP client in Go
 
-SIP 相关的软件很多 https://en.wikipedia.org/wiki/List_of_SIP_software，可能是实现起来比较简单，很多还是开源的。我没去读源代码，只是看了下pjsip、osip、eXosip 的API，发现pjsip封装的很好，文档也齐全，osip偏底层，用起来十分不方便，所以eXosip就出现了，它不仅封装了osip，还作了扩展，虽然号称提供了 high-level API，用起来还是没pjsip方便，文档也不完善，只有一个 Doxygen 自动生成的文档。不过用别人的东西总是感觉理解不深刻，如果想真正理解就得自己开发一个。
+SIP 相关的软件很多 https://en.wikipedia.org/wiki/List_of_SIP_software, 很多是开源的。我没去读源代码，只是看了下pjsip、osip、eXosip 的API，发现pjsip封装的很好，文档也齐全，osip偏底层，用起来十分不方便，所以eXosip就出现了，它不仅封装了osip，还作了扩展，虽然号称提供了 high-level API，用起来还是没pjsip方便，文档也不完善，只有一个 Doxygen 自动生成的文档。不过用别人的东西总是感觉理解不深刻，如果想真正理解就得自己开发一个。
 
 ## 结构
 
