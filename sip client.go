@@ -88,13 +88,13 @@ func main() {
 	}
 
 	var sess Sess_t
-	sess.serverIP 			= serverAddrStr[0]
+	sess.serverIP 		= serverAddrStr[0]
 	sess.serverPort, err 	= strconv.Atoi(serverAddrStr[1])
-	sess.localIP 			= localAddrStr[0]
+	sess.localIP 		= localAddrStr[0]
 	sess.localPort, err 	= strconv.Atoi(localAddrStr[1])
-    sess.user 				= user
-    sess.pass 				= pass
-    sess.extension 			= extension
+	sess.user 		= user
+	sess.pass 		= pass
+	sess.extension 		= extension
 
     // REGISTER Request
 	lines := []string{
@@ -118,7 +118,7 @@ func main() {
 		sess.user, sess.extension, sess.localIP, sess.localPort,
 		3600)
 	conn.Write([]byte(registerRequest))
-    fmt.Println("send completed, and start recving 1")
+    	fmt.Println("send completed, and start recving 1")
 
 	ln, err := net.ListenUDP("udp4", &net.UDPAddr{
 		IP:   net.IPv4(0, 0, 0, 0),
